@@ -14,7 +14,7 @@ namespace RaysHotDogs.Core.Repository
       new HotDogGroup
       {
         Id=1,Title="Meat Lovers",ImagePath="",
-        HotDogs=
+        HotDogs=new List<HotDog>
         {
           new HotDog
           {

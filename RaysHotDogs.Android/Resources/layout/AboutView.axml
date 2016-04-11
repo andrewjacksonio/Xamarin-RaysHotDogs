@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="25px"
+    android:minWidth="25px">
+    <TextView
+        android:text="Want to call Ray? Tap on the Phone Number below!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/callTextView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:text="+5511991944889"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNumberTextView"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal" />
+</LinearLayout>
