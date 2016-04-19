@@ -1,35 +1,46 @@
-using System.Collections.Generic;
 
 using Android.App;
 using Android.OS;
-using Android.Widget;
-using RaysHotDogs.Core.Models;
-using RaysHotDogs.Core.Service;
-using RaysHotDogs.Droid.Adapters;
+using RaysHotDogs.Droid.Fragments;
 
 namespace RaysHotDogs.Droid
 {
   [Activity(Label = "Hot Dog List")]
   public class HotDogMenuActivity : Activity
   {
-    private ListView hotDogListView;
-    private List<HotDog> allHotDogs;
-    private HotDogDataService dataService;
-
     protected override void OnCreate(Bundle savedInstanceState)
     {
       base.OnCreate(savedInstanceState);
 
       // Create your application here
       SetContentView(Resource.Layout.HotDogMenuView);
+      ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 
-      dataService = new HotDogDataService();
-      hotDogListView = FindViewById<ListView>(Resource.Id.hotDogListView);
-      allHotDogs = dataService.GetAllHotDogs();
+      AddTab("Favorites", Resource.Drawable.FavoritesIcon, new FavoriteHotDogListFragment());
+      AddTab("Meat Lovers", Resource.Drawable.MeatLoversIcon, new MeatLoversHotDogListFragment());
+      AddTab("Veggie Lovers", Resource.Drawable.VeggieLoversIcon, new VeggieLoversHotDogListFragment());
+    }
 
-      hotDogListView.Adapter = new HotDogListAdapter(allHotDogs, this);
-      hotDogListView.FastScrollAlwaysVisible = true;
-      hotDogListView.FastScrollEnabled = true;
+    private void AddTab(string tabText, int iconResourceId, Fragment view)
+    {
+      var tab = ActionBar.NewTab();
+      tab.SetText(tabText);
+      tab.SetIcon(iconResourceId);
+
+      tab.TabSelected += delegate (object sender, ActionBar.TabEventArgs e)
+      {
+        var fragment = FragmentManager.FindFragmentById(Resource.Id.fragmentContainer);
+        if (fragment != null)
+          e.FragmentTransaction.Remove(fragment);
+        e.FragmentTransaction.Add(Resource.Id.fragmentContainer, view);
+      };
+
+      tab.TabUnselected += delegate (object sender, ActionBar.TabEventArgs e)
+        {
+          e.FragmentTransaction.Remove(view);
+        };
+
+      ActionBar.AddTab(tab);
     }
   }
 }

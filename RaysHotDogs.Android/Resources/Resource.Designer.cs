@@ -45,10 +45,19 @@ namespace RaysHotDogs.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int FavoritesIcon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int RayLogo = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int MeatLoversIcon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int RayLogo = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int VeggieLoversIcon = 2130837508;
 			
 			static Drawable()
 			{
@@ -63,8 +72,8 @@ namespace RaysHotDogs.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050012
-			public const int aboutButton = 2131034130;
+			// aapt resource value: 0x7f050013
+			public const int aboutButton = 2131034131;
 			
 			// aapt resource value: 0x7f05000a
 			public const int amoutEditText = 2131034122;
@@ -75,17 +84,20 @@ namespace RaysHotDogs.Droid
 			// aapt resource value: 0x7f050009
 			public const int cancelButton = 2131034121;
 			
-			// aapt resource value: 0x7f05000f
-			public const int cartButton = 2131034127;
+			// aapt resource value: 0x7f050010
+			public const int cartButton = 2131034128;
 			
 			// aapt resource value: 0x7f050006
 			public const int descriptionTextView = 2131034118;
 			
+			// aapt resource value: 0x7f05000d
+			public const int fragmentContainer = 2131034125;
+			
 			// aapt resource value: 0x7f050003
 			public const int hotDogDetailImage = 2131034115;
 			
-			// aapt resource value: 0x7f05000d
-			public const int hotDogImageView = 2131034125;
+			// aapt resource value: 0x7f05000e
+			public const int hotDogImageView = 2131034126;
 			
 			// aapt resource value: 0x7f05000c
 			public const int hotDogListView = 2131034124;
@@ -93,14 +105,14 @@ namespace RaysHotDogs.Droid
 			// aapt resource value: 0x7f050004
 			public const int hotDogNameTextView = 2131034116;
 			
-			// aapt resource value: 0x7f05000e
-			public const int logoImageView = 2131034126;
+			// aapt resource value: 0x7f05000f
+			public const int logoImageView = 2131034127;
 			
 			// aapt resource value: 0x7f050002
 			public const int mainScrollView = 2131034114;
 			
-			// aapt resource value: 0x7f050011
-			public const int mapButton = 2131034129;
+			// aapt resource value: 0x7f050012
+			public const int mapButton = 2131034130;
 			
 			// aapt resource value: 0x7f05000b
 			public const int orderButton = 2131034123;
@@ -117,8 +129,8 @@ namespace RaysHotDogs.Droid
 			// aapt resource value: 0x7f050005
 			public const int shortDescriptionTextView = 2131034117;
 			
-			// aapt resource value: 0x7f050010
-			public const int takePictureButton = 2131034128;
+			// aapt resource value: 0x7f050011
+			public const int takePictureButton = 2131034129;
 			
 			static Id()
 			{
@@ -140,13 +152,16 @@ namespace RaysHotDogs.Droid
 			public const int HotDogDetailView = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int HotDogMenuView = 2130903042;
+			public const int HotDogListView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int HotDogRowView = 2130903043;
+			public const int HotDogMenuView = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int MainMenuView = 2130903044;
+			public const int HotDogRowView = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int MainMenuView = 2130903045;
 			
 			static Layout()
 			{

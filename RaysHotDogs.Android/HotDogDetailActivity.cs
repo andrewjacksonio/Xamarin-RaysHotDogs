@@ -5,7 +5,7 @@ using Android.OS;
 using Android.Widget;
 using RaysHotDogs.Core.Models;
 using RaysHotDogs.Core.Service;
-using RaysHotDogs.Droid.Utils;
+using UniversalImageLoader.Core;
 
 namespace RaysHotDogs.Droid
 {
@@ -32,7 +32,7 @@ namespace RaysHotDogs.Droid
       SetContentView(Resource.Layout.HotDogDetailView);
 
       dataService = new HotDogDataService();
-      selectedHotDog = dataService.GetHotDogById(2);
+      selectedHotDog = dataService.GetHotDogById(Intent.GetIntExtra("selectedHotDogId", 1));
       FindViews();
       BindData();
       HandleEvents();
@@ -52,11 +52,15 @@ namespace RaysHotDogs.Droid
 
     private void BindData()
     {
+      var imageHelper = ImageLoader.Instance;
+
       hotDogNameTextView.Text = selectedHotDog.Name;
       shortDescriptionTextView.Text = selectedHotDog.ShortDescription;
       descriptionTextView.Text = selectedHotDog.Description;
       priceTextView.Text = "Price: $" + selectedHotDog.Price;
-      hotDogImageView.SetImageBitmap(ImageHelper.GetImageBitmapFromUrl("http://gillcleerenpluralsight.blob.core.windows.net/files/" + selectedHotDog.ImagePath + ".jpg"));
+
+      imageHelper.DisplayImage("http://gillcleerenpluralsight.blob.core.windows.net/files/" + selectedHotDog.ImagePath + ".jpg",
+              hotDogImageView);
     }
 
     private void HandleEvents()
