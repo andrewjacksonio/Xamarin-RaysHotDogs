@@ -9,7 +9,7 @@ using UniversalImageLoader.Core;
 
 namespace RaysHotDogs.Droid
 {
-  [Activity(Label = "Hot Dog Details")]
+  [Activity(Label = "Ray's Hot Dogs - Hot Dog Details")]
   public class HotDogDetailActivity : Activity
   {
     private ImageView hotDogImageView;
@@ -66,6 +66,12 @@ namespace RaysHotDogs.Droid
     private void HandleEvents()
     {
       orderButton.Click += OrderButton_Click;
+      cancelButton.Click += CancelButton_Click;
+    }
+
+    private void CancelButton_Click(object sender, EventArgs e)
+    {
+      Finish();
     }
 
     private void OrderButton_Click(object sender, EventArgs e)

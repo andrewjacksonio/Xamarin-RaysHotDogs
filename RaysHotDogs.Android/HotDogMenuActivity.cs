@@ -5,7 +5,7 @@ using RaysHotDogs.Droid.Fragments;
 
 namespace RaysHotDogs.Droid
 {
-  [Activity(Label = "Hot Dog List")]
+  [Activity(Label = "Ray's Hot Dogs - Hot Dog List")]
   public class HotDogMenuActivity : Activity
   {
     protected override void OnCreate(Bundle savedInstanceState)
@@ -15,10 +15,10 @@ namespace RaysHotDogs.Droid
       // Create your application here
       SetContentView(Resource.Layout.HotDogMenuView);
       ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
-
-      AddTab("Favorites", Resource.Drawable.FavoritesIcon, new FavoriteHotDogListFragment());
-      AddTab("Meat Lovers", Resource.Drawable.MeatLoversIcon, new MeatLoversHotDogListFragment());
-      AddTab("Veggie Lovers", Resource.Drawable.VeggieLoversIcon, new VeggieLoversHotDogListFragment());
+      
+      AddTab(" Favorites", Resource.Drawable.FavoritesIcon, new FavoriteHotDogListFragment());
+      AddTab(" Meat Lovers", Resource.Drawable.MeatLoversIcon, new MeatLoversHotDogListFragment());
+      AddTab(" Veggie Lovers", Resource.Drawable.VeggieLoversIcon, new VeggieLoversHotDogListFragment());
     }
 
     private void AddTab(string tabText, int iconResourceId, Fragment view)

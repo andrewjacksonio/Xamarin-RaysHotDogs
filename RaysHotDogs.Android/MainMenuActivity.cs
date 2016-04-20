@@ -7,7 +7,7 @@ using Android.Widget;
 
 namespace RaysHotDogs.Droid
 {
-  [Activity(Label = "Ray's Hot Dog", MainLauncher = true)]
+  [Activity(Label = "Ray's Hot Dogs", MainLauncher = true)]
   public class MainMenuActivity : Activity
   {
     Button orderButton;
