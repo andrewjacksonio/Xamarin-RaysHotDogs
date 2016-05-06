@@ -40,6 +40,13 @@ namespace RaysHotDogs.Droid
     {
       orderButton.Click += OrderButton_Click;
       aboutButton.Click += AboutButton_Click;
+      pictureButton.Click += PictureButton_Click;
+    }
+
+    private void PictureButton_Click(object sender, EventArgs e)
+    {
+      var pictureIntent = new Intent(this, typeof(TakePictureActivity));
+      StartActivity(pictureIntent);
     }
 
     private void AboutButton_Click(object sender, EventArgs e)

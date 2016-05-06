@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
-    android:background="#FCD972">
+    android:background="#FCD972"
+    tools:actionBarNavMode="tabs">
     <ImageView
         android:src="@drawable/raylogo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/logoImageView"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         android:layout_marginTop="40px" />
     <Button
         android:text="Order Now!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/orderButton"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
-        android:foregroundTint="#f0f8ffff"
         android:textColor="@android:color/white"
         android:background="@color/cinnabar"
-        android:layout_margin="3px"
-        android:typeface="normal" />
+        android:layout_margin="3px" />
     <Button
         android:text="View yout Cart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/cartButton"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         android:textColor="@android:color/white"
         android:background="@color/cinnabar"
         android:layout_margin="3px" />
@@ -37,7 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/takePictureButton"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         android:textColor="@android:color/white"
         android:background="@color/cinnabar"
         android:layout_margin="3px" />
@@ -46,7 +41,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mapButton"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         android:textColor="@android:color/white"
         android:background="@color/cinnabar"
         android:layout_margin="3px" />
@@ -55,8 +49,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/aboutButton"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
         android:textColor="@android:color/white"
         android:background="@color/cinnabar"
         android:layout_margin="3px" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
 </LinearLayout>
