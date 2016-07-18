@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaysHotDogs.Core", "RaysHotDogs.Core\RaysHotDogs.Core.csproj", "{DF2D8439-8304-449B-A607-233378F64154}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaysHotDogs.Droid", "RaysHotDogs.Android\RaysHotDogs.Droid.csproj", "{3B333B1D-3350-4E93-8D0D-54D2A2E82328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndrewsHotDogs.UnitTest", "AndrewsHotDogs.UnitTest\AndrewsHotDogs.UnitTest.csproj", "{32E68FAA-47A3-4579-B89C-1614EBCD41F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,12 @@ Global
 		{3B333B1D-3350-4E93-8D0D-54D2A2E82328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B333B1D-3350-4E93-8D0D-54D2A2E82328}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B333B1D-3350-4E93-8D0D-54D2A2E82328}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32E68FAA-47A3-4579-B89C-1614EBCD41F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E68FAA-47A3-4579-B89C-1614EBCD41F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E68FAA-47A3-4579-B89C-1614EBCD41F0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{32E68FAA-47A3-4579-B89C-1614EBCD41F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E68FAA-47A3-4579-B89C-1614EBCD41F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E68FAA-47A3-4579-B89C-1614EBCD41F0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
